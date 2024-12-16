@@ -1,0 +1,33 @@
+{
+	"compilerOptions": {
+		"rootDir": "./vitest-example",
+		"outDir": "./dist/esm",
+		"lib": ["esnext", "dom"],
+		"types": ["@vitest/browser/providers/playwright"],
+		"noImplicitAny": true,
+		"noLib": false,
+		"target": "es2017",
+		"sourceMap": true,
+		"module": "NodeNext",
+		"moduleResolution": "NodeNext",
+		"skipLibCheck": true,
+		"strict": true,
+		"forceConsistentCasingInFileNames": true,
+		"allowSyntheticDefaultImports": true,
+		"esModuleInterop": true,
+		"resolveJsonModule": true,
+		"jsx": "react-jsx",
+		"downlevelIteration": true,
+		"experimentalDecorators": true,
+		"isolatedModules": true,
+		"customConditions": ["development"],
+		"declaration": true
+	},
+	"exclude": ["node_modules", "**/*/dist"],
+	"include": [
+		"vitest-example/**/*.ts",
+		"vitest-example/**/*.tsx",
+		"vitest-example/**/*.mts",
+		"src/**/*.tsx"
+	]
+}
