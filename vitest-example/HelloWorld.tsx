@@ -5,6 +5,7 @@ const fakeCacheLoadPromise = new Promise<void>((resolve) => {
 	setTimeout(() => {
 		fakeCacheLoaded = true;
 		resolve();
+		console.log('Fake cache promise is resolved!');
 	}, 100);
 });
 
